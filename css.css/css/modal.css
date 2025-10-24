@@ -1,0 +1,23 @@
+/* Center modal header and make placeholders visible */
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+  }
+  
+  ::placeholder {
+    color: #777 !important;
+  }
+  
+  .modal-header h5 {
+    font-weight: 600;
+  }
+  
+  .modal-footer a {
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .modal-footer a:hover {
+    text-decoration: underline;
+  }
+  

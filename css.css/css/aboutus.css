@@ -1,0 +1,644 @@
+.bgimg {
+    position: relative;
+  }
+  
+  .bgimg img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 40px;
+  
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+
+
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+ 
+  .navbar-nav .nav-link:hover {
+    color: #9be26d !important; 
+  }
+.head1{
+    margin-top: 120px !important;
+}
+
+
+
+@media  (max-width: 600px){
+  .bgimg img{
+    height: 300px;
+  }
+  .bghead h1{
+    font-size: 20px;
+    font-weight: 600;
+    
+   }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 15px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutimg img {
+  width: 400px;
+  margin-left: 0;
+  margin-top: 50px;
+  height: auto;
+  display: block;
+  border-radius: 60px;
+  animation-name: myanim;
+  animation-duration: 4s;
+}
+
+@keyframes myanim {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% { transform: rotate(2deg); }
+  20%, 40%, 60% { transform: rotate(-4deg); }
+  30%, 50%, 70% { transform: rotate(4deg); }
+  80% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+
+.container-fluid a span{
+  color: #c1f821;
+  
+  }
+  .container-fluid a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+
+
+.aboutcnt {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 10px;
+  position: relative;
+  animation-name: myanime;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  overflow-x: hidden;
+}
+
+.cnthd h1 {
+  font-size: 36px;
+  font-family: cursive;
+  color: #333;
+}
+
+.cnthd h2 {
+  font-size: 20px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.cnt1 {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  font-family: cursive;
+}
+
+.highlight-text {
+  color: #c1f821;
+  font-weight: bold;
+}
+
+.mainfont a {
+  font-size: 30px;
+  color: #066AAB;
+  margin: 0 10px;
+}
+
+
+@media (max-width: 600px) {
+  .aboutus {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 2rem;
+  }
+
+  .aboutimg img {
+    width: 90%;
+    max-width: 320px;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+
+  .aboutcnt {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .cnthd h2 {
+    font-size: 16px;
+  }
+
+  .cnthd h1 {
+    font-size: 28px;
+    
+  }
+
+  .cnt1 {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .mainfont {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mainfont a {
+    font-size: 24px;
+  }
+  @media (max-width: 600px) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  
+}
+
+
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes myanime {
+  0%   {color: white; left:0px; top:0px;}
+  25%  { color: black; left:100px; top:0px;}
+  100% {color: black;left: 100px;  top: 0px;}
+
+}
+
+.aboutcnt.animate-on-scroll {
+  animation-name: myanime;
+  animation-duration: 2s; 
+  animation-fill-mode: forwards;
+  
+} 
+
+
+
+
+/* mission--------------------------------------------------------- */
+
+.missionleft h2{
+  color: #c1f821;
+  font-weight: 400;
+  font-family: cursive;
+  display: flex;
+  position: relative;
+  left: 100px;
+  font-size: 50px;
+}
+.missionleft{
+  margin-left: 100px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  
+ 
+}
+.missionleft p{
+  padding-top: 50px;
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+  font-family: cursive;
+}
+
+
+
+
+.missionright h2{
+  color: #c1f821;
+  font-weight: 400;
+  font-family: cursive;
+  display: flex;
+  position: relative;
+  left: 100px;
+  font-size: 50px;
+}
+.missionright{
+  margin-left: 100px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  
+ 
+}
+.missionright p{
+  padding-top: 50px;
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+  font-family: cursive;
+}
+
+
+
+
+.mission{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+.faq-section {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 50px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .faq-title h2 {
+    color: #c1f821;
+    font-family: cursive;
+    font-weight: 600;
+  }
+  
+  .faq-title p {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .accordion-button {
+    background-color: white;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    font-family: cursive;
+  }
+  
+
+  .accordion-body {
+    background-color: #fff;
+    font-family: cursive;
+    color: #444;
+    border-top: 1px solid #ddd;
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .faq-section {
+      padding: 30px 15px;
+    }
+  
+    .faq-title h2 {
+      font-size: 24px;
+    }
+  
+    .faq-title p {
+      font-size: 14px;
+    }
+  
+    .accordion-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .accordion-body {
+      font-size: 13px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mission {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 50px 15px;
+}
+
+.missionleft,
+.missionright {
+  flex: 1 1 45%;
+  margin: 40px 0;
+}
+
+.missionleft h2,
+.missionright h2 {
+  color: #c1f821;
+  font-weight: 400;
+  font-family: cursive;
+  font-size: 50px;
+  position: relative;
+  left: 100px;
+}
+
+.missionleft p,
+.missionright p {
+  padding-top: 30px;
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+  font-family: cursive;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+  .mission {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+
+  .missionleft,
+  .missionright {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .missionleft h2,
+  .missionright h2 {
+    left: 0;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .missionleft p,
+  .missionright p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-top: 20px;
+    text-align: justify;
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footermain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 80px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }  
+  .footerleft h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .footerleft h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .footerfont a {
+    color: #000;
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: 0.3s;
+  }
+  
+  .footerfont a:hover {
+    color: #ff6600;
+  }
+  
+  .mainfooter {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .mainfooter h3 {
+    margin-bottom: 15px;
+  }
+  
+  .mainfooter ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mainfooter li {
+    margin-bottom: 8px;
+  }
+  
+  .footerfoot {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+   
+  }
+  .footermain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 80px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 600px) {
+    .footermain {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
+    }
+   .bghead h1{
+    font-size: 20px;
+    font-weight: 600;
+    
+   }
+  
+    .footerleft h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footerleft h3 {
+      font-size: 1rem;
+    }
+  
+    .footerfont a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  
+    .mainfooter {
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .mainfooter h3 {
+      font-size: 1.1rem;
+    }
+  
+    .mainfooter ul li {
+      font-size: 0.95rem;
+    }
+  
+    .footerfoot {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+  .nav-item a:hover{
+    color: #9be26d;
+  }
+
+
+
+
+

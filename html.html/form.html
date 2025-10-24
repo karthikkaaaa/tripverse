@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+width: 500px;
+margin: auto;
+padding: 20px;
+text-align: center;
+        }
+        input,textarea{
+            width: 300px;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="main" >
+    <form action="#" class="contact-form" id="form">
+        <label for="name"></label>
+        
+        <input type="text"  name="name" id="name" placeholder="Your name" ><br><br>
+        <span class="error" id="nameerror" style="color: red;"></span><br>
+       
+        <label for="email"></label>
+        
+        <input type="text"  name="Email" id="email" placeholder="Your email"><br><br>
+        <span class="error" id="emailerror" style="color: red;"></span><br>
+
+        <label for="file"></label>
+        
+        <input type="file"  name="file" id="file" placeholder="choose file"><br><br><br>
+        <span class="error" id="resumeerror" style="color: red;"></span><br>
+        <!-- <span class="error" id="resumeerror"></span> -->
+    
+        <label for="a4"></label>
+        <input type="textarea"  name="textarea" id="a4" placeholder="Your message"><br><br>
+    
+        <button  style="background-color: blue;color: white;width: 300px;padding: 5px;">Register</button>
+        </form>
+        <script>
+            document.getElementById("form").addEventListener("submit",function(event){
+            var username=document.getElementById("name").value.trim();
+            var email=document.getElementById("email").value.trim();
+    
+            var file=document.getElementById("file");
+    
+            var usernameError=document.getElementById("nameerror");
+            var emailError=document.getElementById("emailerror");
+    
+            var resumerror=document.getElementById("resumeerror");
+            usernameError.textContent="";
+            emailError.textContent="";
+    
+            var isValid=true;
+            if(username === ""){
+    usernameError.textContent="Must have a username"
+    isValid=false;
+}
+var emailpattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ;
+if(email===""){
+    emailError.textContent="Email is required";
+    isValid=false;
+
+}else if(!emailpattern.test(email)){
+    emailError.textContent="Invalid email format"
+    isValid=false;
+}
+
+if(file.files.length===0){
+    resumeerror.textContent="Must have a resume";
+    isValid=false;
+
+}
+
+if(!isValid){
+
+    return;
+}else{
+alert("form submitted successfully!");
+document.getElementById("form").reset();
+clearErrors()
+}
+function clearErrors(){
+    document.querySelectorAll(".error").forEach((n)=>{
+        n.textContent=""
+    })
+}
+    });
+    </script>
+</div>
+</body>
+</html>

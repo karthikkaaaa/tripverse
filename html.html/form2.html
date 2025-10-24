@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formmain">
+        <div class="formcnt">
+          <h1>TRAVEL <br> YOUR <br> WAY</h1>
+          <h3>
+            Ready to plan your packages with perfect tour operators in Kerala? <br><br>
+            We are here to assist you!
+          </h3>
+        </div>
+      
+        <div class="formpart fadeup">
+          <form action="#" class="contact-form" id="form">
+            <label for="name">Name* <br></label>
+            <input type="text" name="name" id="name" class="error1"><br>
+            <span class="error" id="nameerror" style="color: red;"></span><br>
+      
+            <label for="email">Email* <br></label>
+            <input type="text" name="Email" id="email" class="error1"><br>
+            <span class="error" id="emailerror" style="color: red;"></span><br>
+      
+            <label for="phone">Phone* <br></label>
+            <input type="text" name="phone" id="phone" class="error1"><br>
+            <span class="error" id="phoneerror" style="color: red;"></span><br>
+      
+            <label for="designation">Designation* <br></label>
+            <input type="text" name="designation" id="designation" class="error1"><br>
+            <span class="error" id="designationerror" style="color: red;"></span><br>
+      
+            <div class="submit1">
+              <button type="submit" class="submit2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <script>
+      document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // prevent page reload
+      
+        // Get input values
+        var username = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+        var designation = document.getElementById("designation").value.trim();
+      
+        // Get error spans
+        var usernameError = document.getElementById("nameerror");
+        var emailError = document.getElementById("emailerror");
+        var phoneError = document.getElementById("phoneerror");
+        var designationError = document.getElementById("designationerror");
+      
+        // Clear old errors
+        usernameError.textContent = "";
+        emailError.textContent = "";
+        phoneError.textContent = "";
+        designationError.textContent = "";
+      
+        var isValid = true;
+      
+        // Validate Name
+        if (username === "") {
+          usernameError.textContent = "Name is required";
+          isValid = false;
+        }
+      
+        // Validate Email
+        var emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (email === "") {
+          emailError.textContent = "Email is required";
+          isValid = false;
+        } else if (!emailpattern.test(email)) {
+          emailError.textContent = "Invalid email format";
+          isValid = false;
+        }
+      
+        // Validate Phone
+        var phonepattern = /^[0-9]{10}$/;
+        if (phone === "") {
+          phoneError.textContent = "Phone number is required";
+          isValid = false;
+        } else if (!phonepattern.test(phone)) {
+          phoneError.textContent = "Phone must be 10 digits";
+          isValid = false;
+        }
+      
+        // Validate Designation
+        if (designation === "") {
+          designationError.textContent = "Designation is required";
+          isValid = false;
+        }
+      
+        // If all valid
+        if (isValid) {
+          alert("Form submitted successfully!");
+          document.getElementById("form").reset();
+        }
+      });
+      </script>
+      
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

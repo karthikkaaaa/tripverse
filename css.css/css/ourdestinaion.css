@@ -1,0 +1,372 @@
+.bgimg {
+  position: relative;
+}
+
+.bgimg img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.navbar-nav .nav-item {
+  margin-right: 40px;
+
+}
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: #9be26d !important; 
+}
+.head1{
+  margin-top: 120px !important;
+}
+
+
+
+@media  (max-width: 600px){
+.bgimg img{
+  height: 300px;
+}
+.bghead h1{
+  font-size: 20px;
+  font-weight: 600;
+  
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.desigimg {
+display: grid;
+gap: 70px;
+grid-template-columns: auto auto auto;
+margin-left: 170px;
+padding: 10px;
+margin-top: 120px;
+margin-bottom: 100px;
+}
+
+.desigimg img {
+padding: 20px;
+object-fit: cover;
+text-align: center;
+width: 300px;
+height: 300px;
+border-radius: 30px;
+}
+
+.imgg h3 {
+position: relative;
+bottom: 90px;
+left: 40px;
+color: white;
+font-weight: 700;
+font-family: cursive;
+text-decoration: none;
+}
+
+.imgg a {
+text-decoration: none;
+}
+
+.imgg {
+overflow: hidden;
+transition: transform 0.8s;
+}
+
+.imgg img {
+transition: transform 0.8s;
+}
+
+.imgg:hover {
+transform: scale(1.2);
+border-radius: 60px;
+}
+
+.imgg:hover img {
+box-shadow: 1px 1px 2px #333;
+}
+
+
+@media (max-width: 600px) {
+.desigimg {
+  grid-template-columns: 1fr; 
+  margin: 0 auto;
+  gap: 40px;
+  padding: 20px;
+}
+
+.desigimg img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  height: 400px;
+}
+
+.imgg {
+  text-align: center;
+  transform: none;
+}
+
+.imgg h3 {
+  position: static; 
+  color: black; 
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.imgg:hover {
+  transform: none;
+}
+
+.imgg:hover img {
+  box-shadow: 2px 2px 8px #666;
+}
+/* .para p{
+  position: relative;
+  right: 60px;
+} */
+}
+
+.para{
+margin-left: 150px;
+margin-top: 120px;
+text-align: center;
+}
+.para p{
+color: black;
+font-family: cursive;
+font-size: 20px;
+position: relative;
+right: 60px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footermain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}  
+.footerleft h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footerleft h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.footerfont a {
+  color: #000;
+  font-size: 2rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footerfont a:hover {
+  color: #ff6600;
+}
+
+.mainfooter {
+  display: flex;
+  gap: 60px;
+}
+
+.mainfooter h3 {
+  margin-bottom: 15px;
+}
+
+.mainfooter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mainfooter li {
+  margin-bottom: 8px;
+}
+
+.footerfoot {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+ 
+}
+.footermain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .footermain {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+  }
+ .bghead h1{
+  font-size: 20px;
+  font-weight: 600;
+  
+ }
+
+  .footerleft h1 {
+    font-size: 1.5rem;
+  }
+
+  .footerleft h3 {
+    font-size: 1rem;
+  }
+
+  .footerfont a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+
+  .mainfooter {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .mainfooter h3 {
+    font-size: 1.1rem;
+  }
+
+  .mainfooter ul li {
+    font-size: 0.95rem;
+  }
+
+  .footerfoot {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+.nav-item a:hover{
+  color: #9be26d;
+}
+.container-fluid a span{
+  color: #c1f821;
+  
+  }
+  .container-fluid a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
