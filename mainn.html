@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css.css/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<style>
+    
+    
+  .navbar-nav .nav-item {
+    margin-right: 40px;
+  
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+
+
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+ 
+  .navbar-nav .nav-link:hover {
+    color: #9be26d !important; 
+  }
+.head1{
+    margin-top: 120px !important;
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bghead {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.bgimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bgvedio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+
+
+.bgimg h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+  /* text-align: center; */
+  position: relative;
+  top: 200px;
+  margin-left: 50px;
+}
+.bgimg h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  /* text-align: center; */
+  position: relative;
+  top: 220px;
+  margin-left: 50px;
+  color: #fff;
+}
+.bgimg h1 em{
+  color: #a6ff00 ;
+}
+.btn a{
+  padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px solid white;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px; 
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    border-radius: 50px;
+    /* margin-top: 1px; */
+    /* transition: 0.3s; */
+    display: flex;
+    position: relative;
+    bottom: 60px;
+    position: relative;
+    top: 230px;
+    margin-left: 50px;
+    
+}
+.btn a:hover{
+background-color: #9be26d;
+color: #000;
+}
+
+@media (max-width: 600px) {
+  .bghead {
+    height: 80vh; 
+  }
+
+  .bgvedio {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bgimg h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+.aboutus {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 15px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutimg img {
+  width: 400px;
+  margin-left: 0;
+  margin-top: 50px;
+  height: auto;
+  display: block;
+  border-radius: 60px;
+  animation-name: myanim;
+  animation-duration: 4s;
+  /* animation-timeline: view(); */
+}
+
+@keyframes myanim {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% { transform: rotate(2deg); }
+  20%, 40%, 60% { transform: rotate(-4deg); }
+  30%, 50%, 70% { transform: rotate(4deg); }
+  80% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+
+
+
+
+.aboutcnt {
+  flex: 1;
+  min-width: 300px;
+  padding-top: 10px;
+  position: relative;
+  animation-name: myanime;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  overflow-x: hidden;
+}
+
+.cnthd h1 {
+  font-size: 36px;
+  font-family: cursive;
+  color: #333;
+}
+
+.cnthd h2 {
+  font-size: 20px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.cnt1 {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  font-family: cursive;
+}
+
+.highlight-text {
+  color: #c1f821;
+  font-weight: bold;
+}
+
+.mainfont a {
+  font-size: 30px;
+  color: #066AAB;
+  margin: 0 10px;
+}
+
+
+@media (max-width: 600px) {
+  .aboutus {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 2rem;
+  }
+
+  .aboutimg img {
+    width: 90%;
+    max-width: 320px;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+
+  .aboutcnt {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .cnthd h2 {
+    font-size: 16px;
+  }
+
+  .cnthd h1 {
+    font-size: 28px;
+    
+  }
+
+  .cnt1 {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .mainfont {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mainfont a {
+    font-size: 24px;
+  }
+  @media (max-width: 600px) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  
+}
+
+
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes myanime {
+  0%   {color: white; left:0px; top:0px;}
+  25%  { color: black; left:100px; top:0px;}
+  100% {color: black;left: 100px;  top: 0px;}
+  
+
+}
+
+.aboutcnt.animate-on-scroll {
+  animation-name: myanime;
+  animation-duration: 2s; 
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  
+} 
+
+ .aboutbtn{
+  padding: 10px;
+  background-color: #c1f821;
+  border-radius: 5px solid black;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 20px; 
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 50px;
+  
+  display: flex;
+  position: relative;
+  bottom: 60px;
+  
+  
+}  
+.btnabout{
+  display: flex;
+  justify-content: center;
+  
+ 
+ 
+
+}
+
+.btnabout a{
+  text-decoration: none;
+}
+.aboutbtn:hover{
+  background-color: #9be26d;
+}
+.container-fluid a span{
+color: #c1f821;
+
+}
+.container-fluid a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.picdesig {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 45px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.picdesig img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-overlay-text {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.picdesig:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desighead {
+  color: #c1f821;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.desighead h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.desig {
+  margin-top: 120px;
+}
+
+.desigpic {
+  margin-top: 40px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.desigfoot {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.desigfoot h3 {
+  font-size: 18px;
+  color: black;
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.desigfoot h3:hover {
+  background-color: chartreuse;
+  color: #1f3a93;
+}
+
+.footdesig a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .desigpic {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+  }
+
+  .picdesig {
+      width: 90%;  
+      height: 350px; 
+      border-radius: 25px;
+  }
+
+  .image-overlay-text {
+      font-size: 22px;
+      bottom: 15px;
+      left: 20px;
+  }
+
+  .desighead h1 {
+      font-size: 20px;
+  }
+
+  .desigfoot h3 {
+      font-size: 16px;
+      padding: 8px 30px;
+  }
+}
+
+
+
+
+
+.formmain {
+  margin-top: 150px;
+  background-color: #A4E168;
+  min-height: 100vh;
+  border-radius: 100px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 100px;
+  overflow: hidden;
+}
+
+.formcnt {
+  margin-top: 100px;
+}
+
+.formcnt h1 {
+  font-size: 70px;
+  color: #fff;
+  font-family: cursive;
+}
+
+.formcnt h3 {
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: cursive;
+  color: black;
+  font-weight: 800;
+}
+
+.formpart {
+  margin-top: 2px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+}
+
+.contact-form label {
+   display: block; 
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: cursive;
+}
+
+.error1 {
+  width: 400px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.contact-form input {
+  margin-bottom: 20px;
+}
+
+.submit2 {
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: #066AAB;
+  border: #066AAB;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit2:hover {
+  background-color: #055c92;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .formmain {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 40px;
+    padding: 40px 20px;
+  }
+
+  .formcnt {
+    margin: 0;
+    text-align: center;
+  }
+
+  .formcnt h1 {
+    font-size: 40px;
+  }
+
+  .formcnt h3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .formpart {
+    position: static;
+    margin: 40px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form label {
+    text-align: left;
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .error1 {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .submit2 {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .submit1 {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+   .card {
+    width: 300px !important;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: none; 
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-radius: 15px;
+}
+
+
+.card-body, .card-title, .card-text, .btn {
+    display: none;
+}
+
+
+.travelshow h1 { 
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    color: #A4E168;
+    font-family: cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .travelshow h1 {
+        font-size: 26px;
+        margin-top: 80px;
+    }
+
+    .card {
+        width: 90% !important;   
+        height: 250px;           
+        margin: 0 auto;          
+        border-radius: 12px;
+    }
+
+    .card-img-top {
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .row {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.partnertour {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  background-color: white;
+  scroll-behavior: smooth; 
+}
+
+.partnertour::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 15s infinite linear;
+  padding-right: 1em;
+}
+
+@keyframes spin {
+  from { translate: 0; }
+  to { translate: -40%; }
+}
+
+.card10 {
+  padding: 1em;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+  flex-shrink: 0; 
+}
+
+.card10 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  border: 2px solid wheat;
+  object-fit: contain;
+  background-color: white;
+  transition: transform 0.4s ease;
+}
+
+.card10 img:hover {
+  transform: scale(1.05);
+}
+
+
+.tourpartner {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.tourpartner h2 {
+  color: #A4E168;
+  font-family: cursive;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+ @media (max-width: 600px) {
+  .tourpartner {
+      padding-top: 60px;
+  }
+
+  .tourpartner h2 {
+      font-size: 28px;
+  }
+
+  .partnertour {
+      width: 100%;
+      margin: 50px auto;
+      gap: 0.5em;
+      overflow-x: hidden; 
+  }
+
+  .group {
+      gap: 0.5em;
+      animation: spin 15s infinite linear; 
+      justify-content: flex-start;
+      padding-left: 1em;
+  }
+
+  .card10 img {
+      width: 120px;
+      height: 120px;
+      border-radius: 15px;
+  }
+
+  .card10 {
+      padding: 0.5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footermain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 80px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }  
+  .footerleft h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .footerleft h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .footerfont a {
+    color: #000;
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: 0.3s;
+  }
+  
+  .footerfont a:hover {
+    color: #ff6600;
+  }
+  
+  .mainfooter {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .mainfooter h3 {
+    margin-bottom: 15px;
+  }
+  
+  .mainfooter ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mainfooter li {
+    margin-bottom: 8px;
+  }
+  
+  .footerfoot {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+   
+  }
+  .footermain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 80px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 600px) {
+    .footermain {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
+    }
+   .bghead h1{
+    font-size: 20px;
+    font-weight: 600;
+    
+   }
+  
+    .footerleft h1 {
+      font-size: 1.5rem;
+    }
+  
+    .footerleft h3 {
+      font-size: 1rem;
+    }
+  
+    .footerfont a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  
+    .mainfooter {
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .mainfooter h3 {
+      font-size: 1.1rem;
+    }
+  
+    .mainfooter ul li {
+      font-size: 0.95rem;
+    }
+  
+    .footerfoot {
+      font-size: 0.8rem;
+      padding: 10px;
+    }
+  }
+  .nav-item a:hover{
+    color: #9be26d;
+  }
+</style>
+</head>
+<body>
+     
+
+    <div class="bghead"> 
+     <div class="bgimg position-relative">
+     <video autoplay muted loop plays-inline class="bgvedio">
+     <source src="/image/bgv.mp4" type="video/mp4"> </video> 
+     <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 start-0 w-100">
+     <div class="container-fluid"> <a class="navbar-brand" href="#">TRIP<span>VERSE</span></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> </button> 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown"> 
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="/html.html/main.html">Home</a>
+                     </li>
+                      <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="/html.html/aboutus.html">Aboutus</a> </li>
+                         <li class="nav-item"> 
+                            <a class="nav-link active" aria-current="page" href="/html.html/ourdestination.html">Tours</a> </li>
+                             <li class="nav-item"> 
+                                <a class="nav-link active" aria-current="page" href="/html.html/tour.html">Packages</a> </li> 
+                                <li class="nav-item"> 
+                                    <a class="nav-link active" aria-current="page" href="/html.html/contact.html ">Contact</a> </li> 
+                                </ul>
+                             </div> 
+                            </div> 
+                        </nav> 
+                       <h1 class="   "> <em>Travel</em> Beyond Maps <br>
+                            Discover <em>Beyond Borders</em> 
+                            </h1> 
+                            <h3 >Explore the wonders of world with the best travel agency in Calicut| Kerala</h3>
+                           <div class="btn"><a href="#" class="content1">Contact Us</a></div>
+                    </div> 
+                </div>
+
+
+
+
+
+
+
+                <section>
+                    <div class="aboutus">
+                
+                <div class="aboutimg">
+                
+                    <img src="/image/main page about.jpg" alt="non">
+                </div>
+                
+                <div class="aboutcnt">
+                  <div class="cnthd">  <h2>About Us</h2>
+                 <h1 > WHO WE ARE</h1></div>
+                    <div class="maincnt">
+                        <div class="aboutcnt anim-init" id="about-content">
+                        </div>
+                    <p class="cnt1">
+                        At <span class="highlight-text">Tripverse</span>, the best travel agency in Calicut, we believe that travel is more than just ticking destinations off a list—it’s a way to connect with the world, explore new horizons, and discover a piece of yourself in every journey. For us, every trip is a story waiting to be written, filled with meaningful moments, inspiring encounters, and unforgettable memories.
+                    </p><br>
+                    <p class="cnt1">
+                        We’re not just travel planners—we’re your trusted travel partners. From the moment you dream of a destination to the second you return home, we're by your side, crafting personalized experiences that reflect your unique interests, pace, and budget. Whether you're craving a peaceful mountain retreat, an adrenaline-filled adventure, or a culturally rich escape, we take care of every detail so you can focus on the joy of travel.
+                    </p><br>
+                    <p class="cnt1">
+                        At the heart of <span class="highlight-text">Tripverse</span>—Calicut's best travel agency for international and domestic tours—is a passionate team of explorers, storytellers, and logistics pros who bring you first-hand knowledge, insider tips, and carefully curated packages that go beyond the ordinary, because we know your trip deserves more than a generic itinerary.With <span class="highlight-text">Tripverse</span>, you’re not just going on a vacation—you’re embarking on a journey that’s truly yours.
+                    </p><br>
+                    <div class="mainfont" >
+                      <a href="#" > <i  class="fa-brands fa-square-instagram"></i></a> 
+                      <a href="#" > <i class="fa-brands fa-square-whatsapp"></i></a> 
+                      <a href="#" > <i class="fa-brands fa-square-x-twitter"></i></a> 
+                    </div>
+                   
+                    </div>
+                  
+                </div>
+                
+                </div>
+                <div class="btnabout">
+                    <a href="/html.html/aboutus.html"><button class="aboutbtn" onclick="click"><h4>Read More</h4></button></a></div>
+                  
+                </section>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+                <section>
+                    <div class="desig">
+                <div class="desighead"><h1>OUR DESTINATIONS</h1></div>
+                <div class="desigpic">
+                  <div class="picdesig"> 
+                    <img src="/image/bali desg2.jpg" alt="non">
+                    <div class="image-overlay-text">
+                        BALI
+                    </div>
+                    </div> 
+                    <div class="picdesig"> 
+                        <img src="/image/azae dsig.jpg" alt="non">
+                        <div class="image-overlay-text">
+                            Azerbaijan
+                        </div>
+                        </div> 
+                        <div class="picdesig"> 
+                            <img src="/image/kazastan.jpg" alt="non">
+                            <div class="image-overlay-text">
+                                Kazakhstan
+                            </div>
+                            </div> 
+                </div>
+                    </div>
+                    <div class="footdesig">
+                   <a href="/html.html/ourdestination.html"><div class="desigfoot"><h3>View All</h3></div></a> 
+                </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 <!-- <script type="text/javascript">
+                    (function(){
+                       emailjs.init({
+                         publicKey: "fi_c4mFR2v8mTJytc",
+                       });
+                    })();
+                 </script> -->
+
+
+
+
+
+                <div class="formmain">
+                    <div class="formcnt">
+                      <h1>TRAVEL <br> YOUR <br> WAY</h1>
+                      <h3>
+                        Ready to plan your packages with perfect tour operators in Kerala? <br><br>
+                        We are here to assist you!
+                      </h3>
+                    </div>
+                  
+                    <div class="formpart fadeup">
+                      <form action="#" class="contact-form" id="form" onsubmit="sendEmail(event)">
+                        <label for="name">Name* <br></label>
+                        <input type="text" name="name" id="name" class="error1" ><br>
+                        <span class="error" id="nameerror" style="color: red;" class="text-danger"></span><br>
+                  
+                        <label for="email">Email* <br></label>
+                        <input type="text" name="Email" id="email" class="error1" ><br>
+                        <span class="error" id="emailerror" style="color: red;" class="text-danger"></span><br>
+                  
+                        <label for="phone">Phone* <br></label>
+                        <input type="text" name="phone" id="phone" class="error1"><br>
+                        <span class="error" id="phoneerror" style="color: red;" class="text-danger"></span><br>
+                  
+                        <label for="designation">Designation* <br></label>
+                        <input type="text" name="designation" id="designation" class="error1"><br>
+                        <span class="error" id="designationerror" style="color: red;" class="text-danger"></span><br>
+                  
+                        <div class="submit1">
+                          <button type="submit" class="submit2">Submit</button>
+                        </div>
+                      </form>
+                      <script src="email.js"></script>
+                    </div>
+                  </div>
+                  
+                  <script type="text/javascript">
+                     
+                    (function () {
+                      emailjs.init({
+                        publicKey: "fi_c4mFR2v8mTJytc", 
+                      });
+                    })();
+                  
+                   
+                    document.getElementById("form").addEventListener("submit", function (event) {
+                      event.preventDefault(); 
+                  
+                      
+                      var username = document.getElementById("name").value.trim();
+                      var email = document.getElementById("email").value.trim();
+                      var phone = document.getElementById("phone").value.trim();
+                      var designation = document.getElementById("designation").value.trim();
+                  
+                     
+                      var usernameError = document.getElementById("nameerror");
+                      var emailError = document.getElementById("emailerror");
+                      var phoneError = document.getElementById("phoneerror");
+                      var designationError = document.getElementById("designationerror");
+                  
+                      
+                      usernameError.textContent = "";
+                      emailError.textContent = "";
+                      phoneError.textContent = "";
+                      designationError.textContent = "";
+                  
+                      var isValid = true;
+                  
+                      
+                      if (username === "") {
+                        usernameError.textContent = "Name is required";
+                        isValid = false;
+                      }
+                  
+                      
+                      var emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                      if (email === "") {
+                        emailError.textContent = "Email is required";
+                        isValid = false;
+                      } else if (!emailpattern.test(email)) {
+                        emailError.textContent = "Invalid email format";
+                        isValid = false;
+                      }
+                  
+                      var phonepattern = /^[0-9]{10}$/;
+                      if (phone === "") {
+                        phoneError.textContent = "Phone number is required";
+                        isValid = false;
+                      } else if (!phonepattern.test(phone)) {
+                        phoneError.textContent = "Phone must be 10 digits";
+                        isValid = false;
+                      }
+                  
+                      
+                      if (designation === "") {
+                        designationError.textContent = "Message is required";
+                        isValid = false;
+                      }
+                  
+                      
+                      if (isValid) {
+                        const data = {
+                          name: username,
+                          email: email,
+                          number: phone,
+                          message: designation,
+                        };
+                  
+                        emailjs
+                          .send("service_tc943jj", "template_bccdh6d", data)
+                          .then((res) => {
+                            alert("Form submitted successfully!");
+                            document.getElementById("form").reset();
+                          })
+                          .catch((error) => {
+                            alert("Failed to send email: " + error.text);
+                          });
+                      } else {
+                        alert("Please fill all required fields correctly before submitting.");
+                      }
+                    });
+                  </script>
+
+
+
+
+
+                  
+  <!-- //   type="text/javascript"
+  //   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  // ></script>
+
+  // <script type="text/javascript"> -->
+  <!-- //   (function () {
+  //     emailjs.init({
+  //       publicKey: "fi_c4mFR2v8mTJytc",
+  //     });
+  //   })();
+  
+                  </script> -->
+
+
+                <section>
+
+
+                    <div class="travelshow">
+                        <h1>Travaler's Showcase</h1>
+                    </div>
+                
+                    <div class="container my-5">
+                        <div class="row g-4"> 
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho.jpg" class="card-img-top" alt="Card Image 1">
+                                   
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho1.jpg" class="card-img-top" alt="Card Image 2">
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho2.jpg" class="card-img-top" alt="Card Image 3">
+                                   
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho3.jpg" class="card-img-top" alt="Card Image 4">
+                                   
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho4.jpg" class="card-img-top" alt="Card Image 5">
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho5.jpg" class="card-img-top" alt="Card Image 6">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho6.jpg" class="card-img-top" alt="Card Image 5">
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/trippho8.jpg" class="card-img-top" alt="Card Image 6">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card" >
+                                    <img src="/image/9.jpg" class="card-img-top" alt="Card Image 5">
+                                   
+                                </div>
+                            </div>
+                    
+                           
+                           
+                    
+                          
+                    
+                        </div>
+                    </div>
+                        
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <section>
+
+                    <div class="partner"> 
+                        <div class="tourpartner">
+                            <h2>OUR TOUR PARTNERS</h2>
+                        </div>
+                        <div class="partnertour">
+                <div class="group">
+                  <div class="card10"><img src="/image/2-1.png" alt=""></div>
+                  <div class="card10"><img src="/image/3-1.png" alt=""></div>
+                  <div class="card10"><img src="/image/4-1.png" alt="" ></div>
+                  <div class="card10"><img src="/image/5.png" alt=""></div>
+                  <div class="card10"><img src="/image/7.png" alt=""></div>
+                  <div class="card10"><img src="/image/8.png" alt=""></div>
+                  <!-- <div class="card10"><img src="/image/9.jpg" alt=""></div> -->
+                  <div class="card10"><img src="/image/10.png" alt=""></div>
+                  <div class="card10"><img src="/image/11.png" alt=""></div>
+                  <div class="card10"><img src="/image/12.png" alt=""></div>
+                  <div class="card10"><img src="/image/4-1.png" alt="" ></div>
+                  <div class="card10"><img src="/image/5.png" alt=""></div>
+                  <div class="card10"><img src="/image/7.png" alt=""></div>
+                  <div class="card10"><img src="/image/8.png" alt=""></div>
+                  <!-- <div class="card10">11</div> -->
+                </div>
+                </div>
+                        
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+        <section>
+            <div class="footermain">
+              <div class="footerleft">
+                <h1>KEEP IN <br> TOUCH</h1>
+                <h3>Follow Us On Social Media</h3>
+                <div class="footerfont">
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                  <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+              </div>
+          
+              <div class="mainfooter">
+                <div class="footerright1">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li>About us</li>
+                    <li>Tour</li>
+                    <li>Visa</li>
+                    <li>Flight</li>
+                  </ul>
+                </div>
+                <div class="footerright2">
+                  <h3>Contact</h3>
+                  <ul>
+                    <li>+91 9778223354</li>
+                    <li>+91 9567380674</li>
+                    <li>
+                      First floor, Appolo Building,<br>
+                      Behind Railway, Kannacheri, Kozhikode, Kerala<br>
+                      673001
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <div class="footerfoot">
+              <h6>Copyright © 2025 | Powered by <em>Astra WordPress Theme</em></h6>
+            </div>
+          </section>
+          
+             
+              
+              
+        
+        
+        
+        
+        
+        
+</body>
+</html>
